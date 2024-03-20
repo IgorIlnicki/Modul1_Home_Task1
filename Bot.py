@@ -279,7 +279,6 @@ class AddressBook(UserDict):  # Клас для зберігання та упр
                 kk = False
             else:
                 self.data1 = json.loads(file_data)
-                # print (f'   data1 = {self.data1}')
                 kk = True
             return kk
 
