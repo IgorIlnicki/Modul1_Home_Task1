@@ -274,7 +274,7 @@ class AddressBook(UserDict):  # Клас для зберігання та упр
     def checit_pic(self, filename):
         with open(filename, 'r+') as file:
             file_data = file.read().strip()
-            if not file_data:  # якщо файл пустий
+            if not file_data: # якщо файл пустий
                 # print(f" Файл пустий")
                 kk = False
             else:
@@ -282,6 +282,7 @@ class AddressBook(UserDict):  # Клас для зберігання та упр
                 # print (f'   data1 = {self.data1}')
                 kk = True
             return kk
+
 
 
 def parse_input(user_input):  # ввод команди та аргументів
